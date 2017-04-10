@@ -1,9 +1,15 @@
 <?php
 /**
  * Plugin Name: ConvertKit Integration for WPForms
+ * Plugin URI:  https://www.billerickson.net/how-to-setup-convertkit-with-a-wordpress-form
  * Description: Create ConverKit signup forms using WPForms
  * Version:     1.0.0
  * Author:      Bill Erickson
+ * Author URI:  https://www.billerickson.net
+ * Text Domain: be_wpforms_convertkit
+ * Domain Path: /languages
+ * License:     GPLv2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License version 2, as published by the
