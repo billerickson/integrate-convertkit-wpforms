@@ -103,13 +103,10 @@ class BE_WPForms_ConvertKit {
         $email_field_id = $form_data['settings']['be_convertkit_field_email'];
         $first_name_field_id = $form_data['settings']['be_convertkit_field_first_name'];
 
-        if( ! ( $email_field_id && $first_name_field_id ) )
-            return;
-
         $args = array(
             'api_key'    => $api_key,
-            'email'      => $form_data['fields'][$email_field_id]['value'],
-            'first_name' => $form_data['fields'][$first_name_field_id]['value']
+            'email'      => $fields[$email_field_id]['value'],
+            'first_name' => $fields[$first_name_field_id]['value']
         );
 
         if( empty( $args['email'] ) || empty( $args['first_name'] ) )
