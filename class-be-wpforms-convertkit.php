@@ -22,6 +22,28 @@ class BE_WPForms_ConvertKit {
 
     }
 
+    /**
+     * ConvertKit Fields
+     *
+     */
+    function convertkit_fields() {
+
+        $fields = array(
+            array(
+                'slug'      => 'first_name',
+                'label'     =>  __( 'First Name', 'be_wpforms_convertkit' ),
+                'field_map' => array( 'text', 'name' ),
+            ),
+            array(
+                'slug'      => 'email',
+                'label'     => __( 'Email Address', 'be_wpforms_convertkit' ),
+                'field_map' => array( 'email' ),
+            )
+        );
+
+        return apply_filters( 'be_wpforms_convertkit_fields', $fields );
+    }
+
 
      /**
       * Add Settings Section
@@ -56,6 +78,24 @@ class BE_WPForms_ConvertKit {
              $instance->form_data,
              __( 'ConvertKit Form ID', 'be_wpforms_convertkit' )
          );
+
+         $fields = $this->convertkit_fields();
+         foreach( $fields as $field ) {
+
+             wpforms_panel_field(
+                 'select',
+                 'settings',
+                 'be_convertkit_' . sanitize_html_class( $field['slug'] ),
+                 $instance->form_data,
+                 esc_html( $field['label'] ),
+                 array(
+                     'field_map'   => $field['field_map'],
+                     'placeholder' => __( '-- Select Field --', 'be_wpforms_convertkit' ),
+                 )
+             );
+
+         }
+
 
          echo '</div>';
      }
