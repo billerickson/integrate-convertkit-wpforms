@@ -30,7 +30,7 @@
  if ( ! defined( 'ABSPATH' ) ) exit;
 
  // Plugin version
- define( 'BE_WPFORMS_CONVERTKIT_VERSION', '1.0.0' );
+ define( 'CONVERTKIT_FOR_WPFORMS_VERSION', '1.0.0' );
 
 /**
  * Load the class
@@ -40,7 +40,7 @@ function be_wpforms_convertkit() {
 
     load_plugin_textdomain( 'convertkit-for-wpforms', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
-    require_once( plugin_dir_path( __FILE__ ) . 'class-be-wpforms-convertkit.php' );
+    require_once( plugin_dir_path( __FILE__ ) . 'class-convertkit-for-wpforms.php' );
 
 }
 add_action( 'wpforms_loaded', 'be_wpforms_convertkit' );

@@ -8,7 +8,7 @@
  * @license    GPL-2.0+
  */
 
-class BE_WPForms_ConvertKit {
+class ConvertKit_For_WPForms {
 
     /**
      * Primary Class Constructor
@@ -118,4 +118,4 @@ class BE_WPForms_ConvertKit {
     }
 
 }
-new BE_WPForms_ConvertKit;
+new ConvertKit_For_WPForms;
