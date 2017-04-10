@@ -27,7 +27,7 @@ class BE_WPForms_ConvertKit {
      *
      */
     function settings_section( $sections, $form_data ) {
-        $sections['be_convertkit'] = __( 'ConvertKit', 'be_wpforms_convertkit' );
+        $sections['be_convertkit'] = __( 'ConvertKit', 'convertkit-for-wpforms' );
         return $sections;
     }
 
@@ -38,14 +38,14 @@ class BE_WPForms_ConvertKit {
      */
     function settings_section_content( $instance ) {
         echo '<div class="wpforms-panel-content-section wpforms-panel-content-section-be_convertkit">';
-        echo '<div class="wpforms-panel-content-section-title">' . __( 'ConvertKit', 'be_wpforms_convertkit' ) . '</div>';
+        echo '<div class="wpforms-panel-content-section-title">' . __( 'ConvertKit', 'convertkit-for-wpforms' ) . '</div>';
 
         wpforms_panel_field(
             'text',
             'settings',
             'be_convertkit_api',
             $instance->form_data,
-            __( 'ConvertKit API Key', 'be_wpforms_convertkit' )
+            __( 'ConvertKit API Key', 'convertkit-for-wpforms' )
         );
 
         wpforms_panel_field(
@@ -53,7 +53,7 @@ class BE_WPForms_ConvertKit {
             'settings',
             'be_convertkit_form_id',
             $instance->form_data,
-            __( 'ConvertKit Form ID', 'be_wpforms_convertkit' )
+            __( 'ConvertKit Form ID', 'convertkit-for-wpforms' )
         );
 
         wpforms_panel_field(
@@ -61,10 +61,10 @@ class BE_WPForms_ConvertKit {
             'settings',
             'be_convertkit_field_first_name',
             $instance->form_data,
-            __( 'First Name', 'be_wpforms_convertkit' ),
+            __( 'First Name', 'convertkit-for-wpforms' ),
             array(
                 'field_map'   => array( 'text', 'name' ),
-                'placeholder' => __( '-- Select Field --', 'be_wpforms_convertkit' ),
+                'placeholder' => __( '-- Select Field --', 'convertkit-for-wpforms' ),
             )
         );
 
@@ -73,10 +73,10 @@ class BE_WPForms_ConvertKit {
             'settings',
             'be_convertkit_field_email',
             $instance->form_data,
-            __( 'Email Address', 'be_wpforms_convertkit' ),
+            __( 'Email Address', 'convertkit-for-wpforms' ),
             array(
                 'field_map'   => array( 'email' ),
-                'placeholder' => __( '-- Select Field --', 'be_wpforms_convertkit' ),
+                'placeholder' => __( '-- Select Field --', 'convertkit-for-wpforms' ),
             )
         );
 

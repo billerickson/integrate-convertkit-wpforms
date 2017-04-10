@@ -1,12 +1,12 @@
 <?php
 /**
- * Plugin Name: ConvertKit Integration for WPForms
+ * Plugin Name: ConvertKit for WPForms
  * Plugin URI:  https://www.billerickson.net/how-to-setup-convertkit-with-a-wordpress-form
  * Description: Create ConverKit signup forms using WPForms
  * Version:     1.0.0
  * Author:      Bill Erickson
  * Author URI:  https://www.billerickson.net
- * Text Domain: be_wpforms_convertkit
+ * Text Domain: convertkit-for-wpforms
  * Domain Path: /languages
  * License:     GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -38,7 +38,7 @@
  */
 function be_wpforms_convertkit() {
 
-    load_plugin_textdomain( 'be_wpforms_convertkit', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+    load_plugin_textdomain( 'convertkit-for-wpforms', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
     require_once( plugin_dir_path( __FILE__ ) . 'class-be-wpforms-convertkit.php' );
 
