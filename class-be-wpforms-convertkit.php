@@ -18,7 +18,7 @@ class BE_WPForms_ConvertKit {
 
         add_filter( 'wpforms_builder_settings_sections', array( $this, 'settings_section' ), 20, 2 );
         add_filter( 'wpforms_form_settings_panel_content', array( $this, 'settings_section_content' ), 20 );
-        add_action( 'wpforms_process_complete', array( 'send_data_to_convertkit' ), 10, 4 );
+        add_action( 'wpforms_process_complete', array( $this, 'send_data_to_convertkit' ), 10, 4 );
 
     }
 
