@@ -35,5 +35,5 @@ Please support the development of this free plugin by using the affiliate links 
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.0 =
 * Initial release
