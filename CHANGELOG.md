@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file, formatted via [this recommendation](http://keepachangelog.com/).
 
+## [1.0.2] - 2017-04-13
+### Updated
+- Updated documentation
+
 ## [1.0.1] - 2017-04-13
 ### Added
 - Translation file for localization
