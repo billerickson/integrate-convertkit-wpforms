@@ -1,14 +1,14 @@
 <?php
 /**
- * ConvertKit for WPForms
+ * Integrate ConvertKit and WPForms
  *
- * @package    BE_WPForms_ConvertKit
+ * @package    Integrate_ConvertKit_WPForms
  * @since      1.0.0
  * @copyright  Copyright (c) 2017, Bill Erickson
  * @license    GPL-2.0+
  */
 
-class ConvertKit_For_WPForms {
+class Integrate_ConvertKit_WPForms {
 
     /**
      * Primary Class Constructor
@@ -27,7 +27,7 @@ class ConvertKit_For_WPForms {
      *
      */
     function settings_section( $sections, $form_data ) {
-        $sections['be_convertkit'] = __( 'ConvertKit', 'convertkit-for-wpforms' );
+        $sections['be_convertkit'] = __( 'ConvertKit', 'integrate-convertkit-wpforms' );
         return $sections;
     }
 
@@ -38,14 +38,14 @@ class ConvertKit_For_WPForms {
      */
     function settings_section_content( $instance ) {
         echo '<div class="wpforms-panel-content-section wpforms-panel-content-section-be_convertkit">';
-        echo '<div class="wpforms-panel-content-section-title">' . __( 'ConvertKit', 'convertkit-for-wpforms' ) . '</div>';
+        echo '<div class="wpforms-panel-content-section-title">' . __( 'ConvertKit', 'integrate-convertkit-wpforms' ) . '</div>';
 
         wpforms_panel_field(
             'text',
             'settings',
             'be_convertkit_api',
             $instance->form_data,
-            __( 'ConvertKit API Key', 'convertkit-for-wpforms' )
+            __( 'ConvertKit API Key', 'integrate-convertkit-wpforms' )
         );
 
         wpforms_panel_field(
@@ -53,7 +53,7 @@ class ConvertKit_For_WPForms {
             'settings',
             'be_convertkit_form_id',
             $instance->form_data,
-            __( 'ConvertKit Form ID', 'convertkit-for-wpforms' )
+            __( 'ConvertKit Form ID', 'integrate-convertkit-wpforms' )
         );
 
         wpforms_panel_field(
@@ -61,10 +61,10 @@ class ConvertKit_For_WPForms {
             'settings',
             'be_convertkit_field_first_name',
             $instance->form_data,
-            __( 'First Name', 'convertkit-for-wpforms' ),
+            __( 'First Name', 'integrate-convertkit-wpforms' ),
             array(
                 'field_map'   => array( 'text', 'name' ),
-                'placeholder' => __( '-- Select Field --', 'convertkit-for-wpforms' ),
+                'placeholder' => __( '-- Select Field --', 'integrate-convertkit-wpforms' ),
             )
         );
 
@@ -73,10 +73,10 @@ class ConvertKit_For_WPForms {
             'settings',
             'be_convertkit_field_email',
             $instance->form_data,
-            __( 'Email Address', 'convertkit-for-wpforms' ),
+            __( 'Email Address', 'integrate-convertkit-wpforms' ),
             array(
                 'field_map'   => array( 'email' ),
-                'placeholder' => __( '-- Select Field --', 'convertkit-for-wpforms' ),
+                'placeholder' => __( '-- Select Field --', 'integrate-convertkit-wpforms' ),
             )
         );
 
@@ -118,4 +118,4 @@ class ConvertKit_For_WPForms {
     }
 
 }
-new ConvertKit_For_WPForms;
+new Integrate_ConvertKit_WPForms;

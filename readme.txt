@@ -1,4 +1,4 @@
-=== ConvertKit for WPForms ===
+=== Integrate ConvertKit and WPForms ===
 Contributors: billerickson
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZHXHYVWJCTZ94
 Tags: form, wpforms, convertkit, email, marketing

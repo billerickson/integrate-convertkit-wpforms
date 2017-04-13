@@ -1,12 +1,12 @@
 <?php
 /**
- * Plugin Name: ConvertKit for WPForms
+ * Plugin Name: Integrate ConvertKit and WPForms
  * Plugin URI:  https://www.billerickson.net/how-to-setup-convertkit-with-a-wordpress-form
  * Description: Create ConvertKit signup forms using WPForms
  * Version:     1.0.0
  * Author:      Bill Erickson
  * Author URI:  https://www.billerickson.net
- * Text Domain: convertkit-for-wpforms
+ * Text Domain: integrate-convertkit-wpforms
  * Domain Path: /languages
  * License:     GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -20,7 +20,7 @@
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
  * FOR A PARTICULAR PURPOSE.
  *
- * @package    BE_WPForms_ConvertKit
+ * @package    Integrate_ConvertKit_WPForms
  * @since      1.0.0
  * @copyright  Copyright (c) 2017, Bill Erickson
  * @license    GPL-2.0+
@@ -30,17 +30,17 @@
  if ( ! defined( 'ABSPATH' ) ) exit;
 
  // Plugin version
- define( 'CONVERTKIT_FOR_WPFORMS_VERSION', '1.0.0' );
+ define( 'INTEGRATE_CONVERTKIT_WPFORMS_VERSION', '1.0.0' );
 
 /**
  * Load the class
  *
  */
-function be_wpforms_convertkit() {
+function integrate_convertkit_wpforms() {
 
-    load_plugin_textdomain( 'convertkit-for-wpforms', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+    load_plugin_textdomain( 'integrate-convertkit-wpforms', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
-    require_once( plugin_dir_path( __FILE__ ) . 'class-convertkit-for-wpforms.php' );
+    require_once( plugin_dir_path( __FILE__ ) . 'class-integrate-convertkit-wpforms.php' );
 
 }
-add_action( 'wpforms_loaded', 'be_wpforms_convertkit' );
+add_action( 'wpforms_loaded', 'integrate_convertkit_wpforms' );
