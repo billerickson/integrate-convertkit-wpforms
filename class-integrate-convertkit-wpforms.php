@@ -42,7 +42,7 @@ class Integrate_ConvertKit_WPForms {
 
         if( empty( $instance->form_data['be_convertkit_api'] ) ) {
             printf(
-                '<p>%s <a href="http://mbsy.co/convertkit/28981746">%s</a></p>',
+                '<p>%s <a href="http://mbsy.co/convertkit/28981746" target="_blank" rel="noopener noreferrer">%s</a></p>',
                 __( 'Don\'t have an account?', 'integrate-convertkit-wpforms' ),
                 __( 'Sign up now!', 'integrate-convertkit-wpforms' )
             );
