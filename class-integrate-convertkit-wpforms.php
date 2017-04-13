@@ -40,7 +40,7 @@ class Integrate_ConvertKit_WPForms {
         echo '<div class="wpforms-panel-content-section wpforms-panel-content-section-be_convertkit">';
         echo '<div class="wpforms-panel-content-section-title">' . __( 'ConvertKit', 'integrate-convertkit-wpforms' ) . '</div>';
 
-        if( empty( $instance->form_data['be_convertkit_api'] ) ) {
+        if( empty( $instance->form_data['settings']['be_convertkit_api'] ) ) {
             printf(
                 '<p>%s <a href="http://mbsy.co/convertkit/28981746" target="_blank" rel="noopener noreferrer">%s</a></p>',
                 __( 'Don\'t have an account?', 'integrate-convertkit-wpforms' ),
