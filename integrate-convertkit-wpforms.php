@@ -3,7 +3,7 @@
  * Plugin Name: Integrate ConvertKit and WPForms
  * Plugin URI:  https://www.billerickson.net/how-to-setup-convertkit-with-a-wordpress-form
  * Description: Create ConvertKit signup forms using WPForms
- * Version:     1.0.2
+ * Version:     1.0.3
  * Author:      Bill Erickson
  * Author URI:  https://www.billerickson.net
  * Text Domain: integrate-convertkit-wpforms
@@ -21,7 +21,7 @@
  * FOR A PARTICULAR PURPOSE.
  *
  * @package    Integrate_ConvertKit_WPForms
- * @since      1.0.1
+ * @since      1.0.0
  * @copyright  Copyright (c) 2017, Bill Erickson
  * @license    GPL-2.0+
  */
@@ -30,7 +30,7 @@
  if ( ! defined( 'ABSPATH' ) ) exit;
 
  // Plugin version
- define( 'INTEGRATE_CONVERTKIT_WPFORMS_VERSION', '1.0.2' );
+ define( 'INTEGRATE_CONVERTKIT_WPFORMS_VERSION', '1.0.3' );
 
 /**
  * Load the class

@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file, formatted via [this recommendation](http://keepachangelog.com/).
 
+## [1.0.3] - 2017-04-13
+### Updated
+- Remove ConvertKit link once API key has been provided
+
 ## [1.0.2] - 2017-04-13
 ### Updated
 - Updated documentation
