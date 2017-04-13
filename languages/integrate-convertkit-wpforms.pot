@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the Integrate ConvertKit and WPForms package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Integrate ConvertKit and WPForms 1.0.0\n"
+"Project-Id-Version: Integrate ConvertKit and WPForms 1.0.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/integrate-"
 "convertkit-wpforms\n"
-"POT-Creation-Date: 2017-04-13 14:35:10+00:00\n"
+"POT-Creation-Date: 2017-04-13 15:38:58+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,24 +18,32 @@ msgstr ""
 msgid "ConvertKit"
 msgstr ""
 
-#: class-integrate-convertkit-wpforms.php:48
-msgid "ConvertKit API Key"
+#: class-integrate-convertkit-wpforms.php:46
+msgid "Don't have an account?"
+msgstr ""
+
+#: class-integrate-convertkit-wpforms.php:47
+msgid "Sign up now!"
 msgstr ""
 
 #: class-integrate-convertkit-wpforms.php:56
-msgid "ConvertKit Form ID"
+msgid "ConvertKit API Key"
 msgstr ""
 
 #: class-integrate-convertkit-wpforms.php:64
+msgid "ConvertKit Form ID"
+msgstr ""
+
+#: class-integrate-convertkit-wpforms.php:72
 msgid "First Name"
 msgstr ""
 
-#: class-integrate-convertkit-wpforms.php:67
-#: class-integrate-convertkit-wpforms.php:79
+#: class-integrate-convertkit-wpforms.php:75
+#: class-integrate-convertkit-wpforms.php:87
 msgid "-- Select Field --"
 msgstr ""
 
-#: class-integrate-convertkit-wpforms.php:76
+#: class-integrate-convertkit-wpforms.php:84
 msgid "Email Address"
 msgstr ""
 
