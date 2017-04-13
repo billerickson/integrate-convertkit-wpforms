@@ -1,0 +1,61 @@
+# Copyright (C) 2017 Integrate ConvertKit and WPForms
+# This file is distributed under the same license as the Integrate ConvertKit and WPForms package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Integrate ConvertKit and WPForms 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/integrate-"
+"convertkit-wpforms\n"
+"POT-Creation-Date: 2017-04-13 14:35:10+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: class-integrate-convertkit-wpforms.php:30
+#: class-integrate-convertkit-wpforms.php:41
+msgid "ConvertKit"
+msgstr ""
+
+#: class-integrate-convertkit-wpforms.php:48
+msgid "ConvertKit API Key"
+msgstr ""
+
+#: class-integrate-convertkit-wpforms.php:56
+msgid "ConvertKit Form ID"
+msgstr ""
+
+#: class-integrate-convertkit-wpforms.php:64
+msgid "First Name"
+msgstr ""
+
+#: class-integrate-convertkit-wpforms.php:67
+#: class-integrate-convertkit-wpforms.php:79
+msgid "-- Select Field --"
+msgstr ""
+
+#: class-integrate-convertkit-wpforms.php:76
+msgid "Email Address"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Integrate ConvertKit and WPForms"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://www.billerickson.net/how-to-setup-convertkit-with-a-wordpress-form"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Create ConvertKit signup forms using WPForms"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Bill Erickson"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.billerickson.net"
+msgstr ""

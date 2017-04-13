@@ -38,6 +38,4 @@ Creating a form with a Name and Email field.
 ConvertKit Settings panel while editing form.
 
 ## Changelog
-
-### 1.0
-* Initial release
+See [CHANGELOG.md](https://github.com/billerickson/integrate-convertkit-wpforms/blob/master/CHANGELOG.md)

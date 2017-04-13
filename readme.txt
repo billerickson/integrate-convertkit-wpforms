@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: form, wpforms, convertkit, email, marketing
 Requires at least: 3.0.1
 Tested up to: 4.7.3
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,9 @@ Please support the development of this free plugin by using the affiliate links 
 2. ConvertKit Settings panel while editing form.
 
 == Changelog ==
+
+= 1.0.1 =
+* Added translation file for localization
 
 = 1.0.0 =
 * Initial release
