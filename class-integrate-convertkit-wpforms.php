@@ -119,6 +119,9 @@ class Integrate_ConvertKit_WPForms {
 
         if( empty( $args['email'] ) || empty( $args['first_name'] ) )
             return;
+        
+        if( ! apply_filters( 'be_convertkit_process_form', true, $fields, $form_data ) )
+            return;
 
         // Submit to ConvertKit
         $request = wp_remote_post( add_query_arg( $args, 'https://api.convertkit.com/v3/forms/' . $ck_form_id . '/subscribe' ) );
