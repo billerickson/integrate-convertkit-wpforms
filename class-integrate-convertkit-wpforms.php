@@ -119,7 +119,9 @@ class Integrate_ConvertKit_WPForms {
 
         if( empty( $args['email'] ) || empty( $args['first_name'] ) )
             return;
-        
+
+		// Filter for limiting integration
+		// @see https://www.billerickson.net/code/integrate-convertkit-wpforms-conditional-processing/
         if( ! apply_filters( 'be_convertkit_process_form', true, $fields, $form_data ) )
             return;
 
