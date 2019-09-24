@@ -125,7 +125,7 @@ class Integrate_ConvertKit_WPForms {
 
 		// Filter for customizing parameters
 		// @see https://www.billerickson.net/code/integrate-convertkit-wpforms-custom-fields/
-		$args = apply_filters( 'be_convertkit_form_parameters', $args, $fields );
+		$args = apply_filters( 'be_convertkit_form_parameters', $args, $fields, $form_data );
 
 		// Filter for limiting integration
 		// @see https://www.billerickson.net/code/integrate-convertkit-wpforms-conditional-processing/
