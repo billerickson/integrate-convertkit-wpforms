@@ -1,6 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file, formatted via [this recommendation](http://keepachangelog.com/).
 
+## [1.2.0] - 2019-09-24
+### Added
+- Filter for passing custom fields to ConvertKit, [see example](https://www.billerickson.net/code/integrate-convertkit-wpforms-custom-fields/)
+
+### Changed
+- First name is no longer a required field
+
 ## [1.1.0] - 2018-06-19
 ### Added
 - Filter to conditionally limit ConvertKit integration, [see example](https://www.billerickson.net/code/integrate-convertkit-wpforms-conditional-processing/)

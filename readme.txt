@@ -3,8 +3,8 @@ Contributors: billerickson
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZHXHYVWJCTZ94
 Tags: form, wpforms, convertkit, email, marketing
 Requires at least: 3.0.1
-Tested up to: 5.2
-Stable tag: 1.1.0
+Tested up to: 5.3
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,10 @@ Please support the development of this free plugin by using the affiliate links 
 2. ConvertKit Settings panel while editing form.
 
 == Changelog ==
+
+= 1.2.0 =
+- Added filter for passing custom fields to ConvertKit, [see example](https://www.billerickson.net/code/integrate-convertkit-wpforms-custom-fields/)
+- First name is no longer a required field
 
 = 1.1.0 =
 - Added filter to conditionally limit ConvertKit integration, [see example](https://www.billerickson.net/code/integrate-convertkit-wpforms-conditional-processing/)

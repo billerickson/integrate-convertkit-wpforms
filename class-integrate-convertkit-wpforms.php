@@ -107,18 +107,25 @@ class Integrate_ConvertKit_WPForms {
         if( ! ( $api_key && $ck_form_id ) )
             return;
 
-        // Get email and first name
+		$args = array(
+            'api_key'    => $api_key
+		);
+
+
+        // Return early if no email
         $email_field_id = $form_data['settings']['be_convertkit_field_email'];
+		if( empty( $email_field_id ) || empty( $fields[ $email_field_id ]['value'] ) )
+			return;
+
+		$args['email'] = $fields[ $email_field_id ]['value'];
+
         $first_name_field_id = $form_data['settings']['be_convertkit_field_first_name'];
+		if( !empty( $first_name_field_id ) && !empty( $fields[ $first_name_field_id ]['value'] ) )
+			$args['first_name'] = $fields[ $first_name_field_id ]['value'];
 
-        $args = array(
-            'api_key'    => $api_key,
-            'email'      => $fields[$email_field_id]['value'],
-            'first_name' => $fields[$first_name_field_id]['value']
-        );
-
-        if( empty( $args['email'] ) || empty( $args['first_name'] ) )
-            return;
+		// Filter for customizing parameters
+		// @see https://www.billerickson.net/code/integrate-convertkit-wpforms-custom-fields/
+		$args = apply_filters( 'be_convertkit_form_parameters', $args, $fields );
 
 		// Filter for limiting integration
 		// @see https://www.billerickson.net/code/integrate-convertkit-wpforms-conditional-processing/
