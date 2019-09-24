@@ -124,11 +124,11 @@ class Integrate_ConvertKit_WPForms {
 			$args['first_name'] = $fields[ $first_name_field_id ]['value'];
 
 		// Filter for customizing parameters
-		// @see https://www.billerickson.net/code/integrate-convertkit-wpforms-custom-fields/
+		// @link https://www.billerickson.net/code/integrate-convertkit-wpforms-custom-fields/
 		$args = apply_filters( 'be_convertkit_form_parameters', $args, $fields, $form_data );
 
 		// Filter for limiting integration
-		// @see https://www.billerickson.net/code/integrate-convertkit-wpforms-conditional-processing/
+		// @link https://www.billerickson.net/code/integrate-convertkit-wpforms-conditional-processing/
         if( ! apply_filters( 'be_convertkit_process_form', true, $fields, $form_data ) )
             return;
 
