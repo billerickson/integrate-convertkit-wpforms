@@ -123,9 +123,9 @@ class Integrate_ConvertKit_WPForms {
 		if( !empty( $first_name_field_id ) && !empty( $fields[ $first_name_field_id ]['value'] ) )
 			$args['first_name'] = $fields[ $first_name_field_id ]['value'];
 
-		// Filter for customizing parameters
+		// Filter for customizing arguments
 		// @link https://www.billerickson.net/code/integrate-convertkit-wpforms-custom-fields/
-		$args = apply_filters( 'be_convertkit_form_parameters', $args, $fields, $form_data );
+		$args = apply_filters( 'be_convertkit_form_args', $args, $fields, $form_data );
 
 		// Filter for limiting integration
 		// @link https://www.billerickson.net/code/integrate-convertkit-wpforms-conditional-processing/
