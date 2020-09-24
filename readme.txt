@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: form, wpforms, convertkit, email, marketing
 Requires at least: 3.0.1
 Tested up to: 5.5
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,9 @@ Please support the development of this free plugin by using the affiliate links 
 2. ConvertKit Settings panel while editing form.
 
 == Changelog ==
+
+= 1.3.0 =
+- Added method for defining custom fields and tags in your form, [more information](https://www.billerickson.net/setup-convertkit-wordpress-form/#custom-fields-and-tags)
 
 = 1.2.0 =
 - Added filter for passing custom fields to ConvertKit, [see example](https://www.billerickson.net/code/integrate-convertkit-wpforms-custom-fields/)

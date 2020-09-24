@@ -123,6 +123,29 @@ class Integrate_ConvertKit_WPForms {
 		if( !empty( $first_name_field_id ) && !empty( $fields[ $first_name_field_id ]['value'] ) )
 			$args['first_name'] = $fields[ $first_name_field_id ]['value'];
 
+		// Custom Fields and tags
+		// @link https://www.billerickson.net/setup-convertkit-wordpress-form/#custom-fields-and-tags
+		foreach( $form_data['fields'] as $i => $field ) {
+			if( empty( $field['css'] ) )
+				continue;
+
+			$value = !empty( $fields[$i]['value_raw'] ) ? $fields[$i]['value_raw'] : $fields[$i]['value'];
+			$classes = explode( ' ', $field['css'] );
+			foreach( $classes as $class ) {
+
+				// Custom Fields
+				if( false !== strpos( $class, 'ck-custom-' ) ) {
+					$key = str_replace( 'ck-custom-', '', $class );
+					$args['fields'][ $key ] = $value;
+				}
+
+				// Tags
+				if( 'ck-tag' == $class ) {
+					$args['tags'][] = $value;
+				}
+			}
+		}
+
 		// Filter for customizing arguments
 		// @link https://www.billerickson.net/code/integrate-convertkit-wpforms-custom-fields/
 		$args = apply_filters( 'be_convertkit_form_args', $args, $fields, $form_data );
