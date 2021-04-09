@@ -158,6 +158,18 @@ class Integrate_ConvertKit_WPForms {
         // Submit to ConvertKit
         $request = wp_remote_post( add_query_arg( $args, 'https://api.convertkit.com/v3/forms/' . $ck_form_id . '/subscribe' ) );
 
+		if ( function_exists( 'wpforms_log' ) ) {
+			wpforms_log(
+				'ConvertKit Response',
+				$request,
+				[
+					'type'    => [ 'provider' ],
+					'parent'  => $entry_id,
+					'form_id' => $form_data['id'],
+				]
+			);
+		}
+
     }
 
 }
