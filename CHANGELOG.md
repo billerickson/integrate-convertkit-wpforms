@@ -1,6 +1,14 @@
 # Change Log
 All notable changes to this project will be documented in this file, formatted via [this recommendation](http://keepachangelog.com/).
 
+## [1.4.0] - 2021-04-09
+### Added
+- Support for WPForms Log (Tools > Logs > select provider)
+
+## [1.3.0] - 2020-09-24
+### Added
+- Method for defining custom fields and tags in your form, [more information](https://www.billerickson.net/setup-convertkit-wordpress-form/#custom-fields-and-tags)
+
 ## [1.2.0] - 2019-09-24
 ### Added
 - Filter for passing custom fields to ConvertKit, [see example](https://www.billerickson.net/code/integrate-convertkit-wpforms-custom-fields/)

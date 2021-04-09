@@ -3,8 +3,8 @@ Contributors: billerickson
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZHXHYVWJCTZ94
 Tags: form, wpforms, convertkit, email, marketing
 Requires at least: 3.0.1
-Tested up to: 5.5
-Stable tag: 1.3.0
+Tested up to: 5.7
+Stable tag: 1.4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,6 +17,10 @@ Create ConvertKit signup forms using WPForms
 [WPForms](http://www.shareasale.com/r.cfm?u=402581&b=834775&m=64312&afftrack=convertkit%2Dplugin&urllink=)' simple drag-and-drop form builder allows you to create new forms with ease and its clean, modern code makes customizations a snap. This integration also works with the free version, [WPForms Lite](https://wordpress.org/plugins/wpforms-lite/), but I highly recommend purchasing the full WPForms for the valuable premium features and support.
 
 Please support the development of this free plugin by using the affiliate links above.
+
+If you are having issues with ConvertKit not receiving your submissions, you can enable logging and share that data with ConvertKit support. Go to WPForms > Tools > Logs, check "Enable logging", and enable it for "Providers". Once enabled, any form submission that is processed by this plugin will also store the ConvertKit API response in WPForms > Tools > Logs.
+
+I recommend that you only enable logging for as long as necessary to debug your issue, then disable logging so you don't fill up the database with unnecessary logs.
 
 == Installation ==
 
@@ -34,6 +38,9 @@ Please support the development of this free plugin by using the affiliate links 
 2. ConvertKit Settings panel while editing form.
 
 == Changelog ==
+
+= 1.4.0 =
+- Added support for WPForms Log (Tools > Logs > select provider)
 
 = 1.3.0 =
 - Added method for defining custom fields and tags in your form, [more information](https://www.billerickson.net/setup-convertkit-wordpress-form/#custom-fields-and-tags)
